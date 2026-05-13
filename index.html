@@ -92,7 +92,7 @@
 <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-database-compat.js"></script>
 
-<script>
+<script type="text/babel">
   const firebaseConfig = {
     apiKey: "AIzaSyCupK0XQYDdQB5-C-NqPaI2B6hSd3Twh6I",
     authDomain: "tournament-f7277.firebaseapp.com",
@@ -102,8 +102,15 @@
     messagingSenderId: "822786718406",
     appId: "1:822786718406:web:2ba6db5d8a73236a74f5c7"
   };
+
+  // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   const db = firebase.database();
+
+  // Your React code starts here
+  const { useState, useEffect, useMemo } = React;
+  
+  // Paste the rest of your tournament logic below this line...
 </script>
         if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
         const db = firebase.database();
